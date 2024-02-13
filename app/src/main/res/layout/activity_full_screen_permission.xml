@@ -4,6 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".views.FullScreenPermission">
 
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/img_storage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/lufga_semi_bold"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_6sdp"
+        android:text="Permission required"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/lufga_regular"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_24sdp"
+        android:text="Allow Media Player To Access Your Internal Storage"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/allowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/_14sdp"
+            android:background="@drawable/bg_blue_card_less_radius"
+
+            android:fontFamily="@font/lufga_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_6sdp"
+            android:text="Allow permission"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <TextView
+            android:id="@+id/denyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/lufga_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_6sdp"
+            android:text="Not now"
+            android:textColor="#F19209"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
